@@ -1,30 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 body {
-  font-family: serif;
-  margin: 0;
-  background: #eee;
-  height: auto;
+  background: #90a959;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  min-width: 320px;
 }
 
-main {
+#outer-form {
+  background: #f7fff7;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
   max-width: 900px;
-  margin: auto;
+  padding: 10px;
+  padding-top: 20px;
   box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4),
     -30px 0px 40px 0px rgba(0, 0, 0, 0.4);
 }
 
 .labels {
   display: inline-block;
-  text-align: left;
-  width: 50%;
-  padding: 10px;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
   vertical-align: top;
   margin-top: 10px;
 }
 
 .inputRight {
   display: inline-block;
-  text-align: right;
+  text-align: left;
   width: 48%;
   vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+#submit {
+  background: #90a959;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 90px;
+  margin: 10px;
+  border: 0px solid;
+  transition: background 500ms ease-in;
+}
+
+#submit:hover {
+  color: #151515;
+  background: #505f30;
+  width: 100px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
 }

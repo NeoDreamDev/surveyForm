@@ -13,36 +13,39 @@
     <main>
         <h1 id="title">Survey Form</h1>
         <p id="description">We'd love to get some of your feedback</p>
-        <div class="outer-form">
+        <div id="outer-form">
             <form id="survey-form" action="#" method="GET">
                 <div class="inputRow">
-                    <div id="labels">
+                    <div class="labels">
                         <label id="name-label" for="name">* Name:</label>
                     </div>
                     <div class="inputRight">
-                        <input autofocus id="name" type="text" name="name" placeholder="Enter Yo Name" required>
-                    </div>
-                </div>
-                <br>
-                <div class="inputRow">
-                    <div id="labels">
-                        <label for="email" id="email-label">* Email:</label>
-                    </div>
-                    <div class="inputRight">
-                        <input id="email" type="email" name="email" Placeholder="Enter Yo Email" required>
+                        <input autofocus id="name" type="text" class="input-field" name="name" placeholder="Enter Yo Name"
+                            required>
                     </div>
                 </div>
 
-                <br>
                 <div class="inputRow">
-                    <div id="labels">
+                    <div class="labels">
+                        <label for="email" id="email-label">* Email:</label>
+                    </div>
+                    <div class="inputRight">
+                        <input id="email" type="email" class="input-field" name="email" Placeholder="Enter Yo Email"
+                            required>
+                    </div>
+                </div>
+
+
+                <div class="inputRow">
+                    <div class="labels">
                         <label for="age" id="number-label">* Age:</label>
                     </div>
                     <div class="inputRight">
-                        <input id="age" type="number" name="quantity" min="1" max="999" placeholder="Age" required>
+                        <input id="age" class="input-field" type="number" name="quantity" min="1" max="999" placeholder="Age"
+                            required>
                     </div>
                 </div>
-                <br>
+
                 <div class="inputRow">
                     <div class="labels">
                         <label for="careers">What field of work are you currently in?</label>
@@ -64,7 +67,7 @@
                         </select>
                     </div>
                 </div>
-                <br>
+
 
                 <div class="inputRow">
                     <div class="labels">
@@ -86,7 +89,7 @@
                         </ul>
                     </div>
                 </div>
-                <br>
+
                 <div class="inputRow">
                     <div class="labels">
                         <label for="">What do you love most about freeCodeCamp?</label>
@@ -101,7 +104,7 @@
                         </select>
                     </div>
                 </div>
-                <br>
+
                 <div class="inputRow">
                     <div class="labels">
                         <label for="">What do you think we need to improve your experience?</label>
@@ -149,7 +152,7 @@
                         </ul>
                     </div>
                 </div>
-                <br>
+
                 <div class="inputRow">
                     <div class="labels">
                         <label for="comments">We'd love to hear any comments of suggestions you may have:</label>
